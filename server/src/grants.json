@@ -184,5 +184,245 @@
     "resource": "Member",
     "action": "read:any",
     "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Info",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Info",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Info",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Info",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Info",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Info",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Info",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Info",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Info",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Info",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Info",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Info",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Info",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Info",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Info",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Info",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "member",
+    "resource": "Info",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Info",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "crew",
+    "resource": "Info",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Info",
+    "action": "read:any",
+    "attributes": "*"
   }
 ]

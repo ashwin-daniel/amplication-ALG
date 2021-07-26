@@ -30,7 +30,31 @@ model Member {
   updatedAt DateTime         @updatedAt
 }
 
+model Event {
+  createdAt DateTime       @default(now())
+  eventDate DateTime?
+  id        String         @id @default(cuid())
+  title     String?
+  type      EnumEventType?
+  updatedAt DateTime       @updatedAt
+}
+
+model Info {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  image     String?
+  message   String?
+  title     String?
+  updatedAt DateTime @updatedAt
+}
+
 enum EnumMemberGender {
   male
   female
+}
+
+enum EnumEventType {
+  Birthday
+  Workiversary
+  Event
 }

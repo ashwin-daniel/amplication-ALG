@@ -14,6 +14,14 @@ import { MemberList } from "./member/MemberList";
 import { MemberCreate } from "./member/MemberCreate";
 import { MemberEdit } from "./member/MemberEdit";
 import { MemberShow } from "./member/MemberShow";
+import { EventList } from "./event/EventList";
+import { EventCreate } from "./event/EventCreate";
+import { EventEdit } from "./event/EventEdit";
+import { EventShow } from "./event/EventShow";
+import { InfoList } from "./info/InfoList";
+import { InfoCreate } from "./info/InfoCreate";
+import { InfoEdit } from "./info/InfoEdit";
+import { InfoShow } from "./info/InfoShow";
 
 const App = (): React.ReactElement => {
   const [dataProvider, setDataProvider] = useState<DataProvider | null>(null);
@@ -52,6 +60,20 @@ const App = (): React.ReactElement => {
           edit={MemberEdit}
           create={MemberCreate}
           show={MemberShow}
+        />
+        <Resource
+          name="Event"
+          list={EventList}
+          edit={EventEdit}
+          create={EventCreate}
+          show={EventShow}
+        />
+        <Resource
+          name="Info"
+          list={InfoList}
+          edit={InfoEdit}
+          create={InfoCreate}
+          show={InfoShow}
         />
       </Admin>
     </div>
