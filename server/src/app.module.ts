@@ -1,6 +1,8 @@
 import { Module } from "@nestjs/common";
 import { UserModule } from "./user/user.module";
 import { MemberModule } from "./member/member.module";
+import { EventModule } from "./event/event.module";
+import { InfoModule } from "./info/info.module";
 import { ACLModule } from "./auth/acl.module";
 import { AuthModule } from "./auth/auth.module";
 import { MorganModule } from "nest-morgan";
@@ -14,6 +16,8 @@ import { GraphQLModule } from "@nestjs/graphql";
   imports: [
     UserModule,
     MemberModule,
+    EventModule,
+    InfoModule,
     ACLModule,
     AuthModule,
     MorganModule,
