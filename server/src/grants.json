@@ -24,6 +24,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "User",
     "action": "create:any",
@@ -66,6 +72,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
     "role": "member",
     "resource": "Member",
     "action": "read:own",
@@ -90,6 +102,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "Member",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "member",
     "resource": "Member",
     "action": "create:any",
@@ -114,6 +132,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "Member",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "member",
     "resource": "Member",
     "action": "update:any",
@@ -133,6 +157,12 @@
   },
   {
     "role": "user",
+    "resource": "Member",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "team",
     "resource": "Member",
     "action": "update:any",
     "attributes": "*"
@@ -157,6 +187,12 @@
   },
   {
     "role": "user",
+    "resource": "Member",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "team",
     "resource": "Member",
     "action": "delete:any",
     "attributes": "*"
@@ -186,6 +222,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "Member",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
     "role": "member",
     "resource": "Event",
     "action": "read:own",
@@ -210,6 +252,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "member",
     "resource": "Event",
     "action": "create:any",
@@ -217,18 +265,6 @@
   },
   {
     "role": "admin",
-    "resource": "Event",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "crew",
-    "resource": "Event",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
     "resource": "Event",
     "action": "create:any",
     "attributes": "*"
@@ -246,37 +282,7 @@
     "attributes": "*"
   },
   {
-    "role": "crew",
-    "resource": "Event",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Event",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
     "role": "member",
-    "resource": "Event",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Event",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "crew",
-    "resource": "Event",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
     "resource": "Event",
     "action": "delete:any",
     "attributes": "*"
@@ -306,6 +312,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
     "role": "member",
     "resource": "Info",
     "action": "read:own",
@@ -330,6 +342,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "Info",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "member",
     "resource": "Info",
     "action": "create:any",
@@ -354,6 +372,12 @@
     "attributes": "*"
   },
   {
+    "role": "team",
+    "resource": "Info",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "member",
     "resource": "Info",
     "action": "update:any",
@@ -373,6 +397,12 @@
   },
   {
     "role": "user",
+    "resource": "Info",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "team",
     "resource": "Info",
     "action": "update:any",
     "attributes": "*"
@@ -397,6 +427,12 @@
   },
   {
     "role": "user",
+    "resource": "Info",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "team",
     "resource": "Info",
     "action": "delete:any",
     "attributes": "*"
@@ -421,6 +457,12 @@
   },
   {
     "role": "user",
+    "resource": "Info",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "team",
     "resource": "Info",
     "action": "read:any",
     "attributes": "*"
