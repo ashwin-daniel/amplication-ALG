@@ -78,31 +78,7 @@
     "attributes": "*"
   },
   {
-    "role": "member",
-    "resource": "Member",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Member",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
     "role": "crew",
-    "resource": "Member",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Member",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "team",
     "resource": "Member",
     "action": "read:own",
     "attributes": "*"

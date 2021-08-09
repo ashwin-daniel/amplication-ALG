@@ -1,10 +1,10 @@
 import { Injectable, ExecutionContext } from "@nestjs/common";
 import { GqlExecutionContext } from "@nestjs/graphql";
 import type { Request } from "express";
-import { JwtAuthGuard } from "./jwtAuth.guard";
+import { BasicAuthGuard } from "./basicAuth.guard";
 
 @Injectable()
-export class GqlBasicAuthGuard extends JwtAuthGuard {
+export class GqlBasicAuthGuard extends BasicAuthGuard {
   // This method is required for the interface - do not delete it.
   getRequest(context: ExecutionContext): Request {
     const ctx = GqlExecutionContext.create(context);

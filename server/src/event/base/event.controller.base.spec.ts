@@ -3,7 +3,7 @@ import { INestApplication, HttpStatus, ExecutionContext } from "@nestjs/common";
 import request from "supertest";
 import { MorganModule } from "nest-morgan";
 import { ACGuard } from "nest-access-control";
-import { JwtAuthGuard } from "src/auth/jwtAuth.guard";
+import { BasicAuthGuard } from "../../auth/basicAuth.guard";
 import { ACLModule } from "../../auth/acl.module";
 import { EventController } from "../event.controller";
 import { EventService } from "../event.service";
@@ -56,7 +56,7 @@ const service = {
   },
 };
 
-const jwtAuthGuard = {
+const basicAuthGuard = {
   canActivate: (context: ExecutionContext) => {
     const argumentHost = context.switchToHttp();
     const request = argumentHost.getRequest();
@@ -87,8 +87,8 @@ describe("Event", () => {
       controllers: [EventController],
       imports: [MorganModule.forRoot(), ACLModule],
     })
-      .overrideGuard(JwtAuthGuard)
-      .useValue(jwtAuthGuard)
+      .overrideGuard(BasicAuthGuard)
+      .useValue(basicAuthGuard)
       .overrideGuard(ACGuard)
       .useValue(acGuard)
       .compile();
