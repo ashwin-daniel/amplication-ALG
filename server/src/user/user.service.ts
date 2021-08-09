@@ -28,7 +28,7 @@ export class UserService extends UserServiceBase {
     return user;
   }
 
-  async findByPayload({ username }: Credentials) {
+  async findByPayload({ username }: Partial<Credentials>) {
     return await this.findOne({ where: { username } });
   }
 }

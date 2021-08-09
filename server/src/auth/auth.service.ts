@@ -6,7 +6,7 @@ import { UserService } from '../user/user.service';
 import { UserInfo } from './UserInfo';
 import { JwtService } from '@nestjs/jwt';
 import { Credentials } from './Credentials';
-import { UnauthorizedException } from '@nestjs/common';
+import { UnauthorizedException, NotFoundException } from '@nestjs/common';
 
 @Injectable()
 export class AuthService {
@@ -20,6 +20,14 @@ export class AuthService {
     const user = await this.userService.findByLogin({ username, password });
     if (!user) {
       throw new UnauthorizedException('Invalid token');
+    }
+    return user;
+  }
+
+  async validateToken(username: string) {
+    const user = await this.userService.findByPayload({ username: username });
+    if (!user) {
+      throw new NotFoundException('User not found');
     }
     return user;
   }
@@ -46,10 +54,7 @@ export class AuthService {
   }
 
   async login({ username, password }: Credentials) {
-    console.log('Debug', { username, password });
-
     const user = await this.userService.findByLogin({ username, password });
-
     const token = this.createToken(user);
     return { username: user.username, ...token };
   }
